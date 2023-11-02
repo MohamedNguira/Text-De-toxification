@@ -1,0 +1,10 @@
+*.tsv
+*.zip
+env
+data
+.idea
+*.pyc
+*tfevents*
+*.pk
+*.pkl
+src/models/s2s/test-trainer
