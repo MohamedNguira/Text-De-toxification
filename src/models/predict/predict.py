@@ -40,7 +40,7 @@ def predict():
     test_data = load_dataset("csv", data_files=os.path.join(DATA_FOLDER, 'test_split.csv'), split='train')
     test_data = test_data.map(lambda b: prepare_sample(b, tokenizer=tokenizer), batched=True).remove_columns(['source', 'target'])
 
-    with open(os.path.join(SCRIPT_DIR, "custom_s2s.txt"), 'w') as file:
+    with open(os.path.join(SCRIPT_DIR, "results.txt"), 'w') as file:
         for i in range(len(test_data)):
             input_ids = test_data[i]['input_ids']
             attention_mask = test_data[i]['attention_mask']

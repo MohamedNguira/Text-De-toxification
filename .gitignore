@@ -29,3 +29,4 @@ checkpoints/s2s/toxic_classifier_checkpoints/checkpoint-600/tokenizer_config.jso
 checkpoints/s2s/toxic_classifier_checkpoints/checkpoint-600/trainer_state.json
 checkpoints/s2s/toxic_classifier_checkpoints/checkpoint-600/training_args.bin
 checkpoints/s2s/toxic_classifier_checkpoints/checkpoint-600/vocab.json
+!data/test.csv
