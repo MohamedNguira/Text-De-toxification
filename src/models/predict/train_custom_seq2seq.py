@@ -23,7 +23,7 @@ from datasets import load_dataset
 from transformers import DataCollatorForSeq2Seq
 from torch.utils.data import DataLoader
 from transformers import Seq2SeqTrainer, Seq2SeqTrainingArguments, Trainer
-from src.models/train.pytorch_utilities import cleanup
+from src.models.train.pytorch_utilities import cleanup
 
 
 def prepare_sample(batch, tokenizer):
@@ -50,7 +50,7 @@ def load_the_data(tokenizer):
     return train_data, val_data, data_collator
 
 
-from src.models/train.pytorch_utilities import get_module_device
+from src.models.train.pytorch_utilities import get_module_device
 
 class CustomTrainer(Trainer):
     def __init__(self, toxic_classifier, *args, **kwargs):

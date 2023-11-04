@@ -97,7 +97,7 @@ def set_model():
 
 from transformers import DataCollatorWithPadding
 from torch.utils.data import DataLoader
-import src.data_preparation.prepare_data as pdr
+import src.data.preprocess2 as pdr
 
 
 class CustomTrainer(Trainer):
