@@ -37,7 +37,7 @@ def predict():
                                       'checkpoint-21200')
     model = AutoModelForSeq2SeqLM.from_pretrained(seq2seq_checkpoint).to('cuda')
 
-    test_data = load_dataset("csv", data_files=os.path.join(DATA_FOLDER, 'test_split.csv'), split='train')
+    test_data = load_dataset("csv", data_files=os.path.join(DATA_FOLDER, 'test.csv'), split='train')
     test_data = test_data.map(lambda b: prepare_sample(b, tokenizer=tokenizer), batched=True).remove_columns(['source', 'target'])
 
     with open(os.path.join(SCRIPT_DIR, "results.txt"), 'w') as file:
