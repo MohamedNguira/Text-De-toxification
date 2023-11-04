@@ -8,7 +8,7 @@ from pathlib import Path
 from tqdm import tqdm
 from seq2seq_model import BertBasedEncoder, DecoderRNN
 
-from src.training_utilities.exp_tracking import create_summary_writer, _add_metric, report_results
+from src.models/train.exp_tracking import create_summary_writer, _add_metric, report_results
 
 def train_per_epoch(encoder: BertBasedEncoder,
                     decoder: DecoderRNN, 

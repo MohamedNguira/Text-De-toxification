@@ -132,6 +132,6 @@ trainer = CustomTrainer(
 )
 
 
-from src.training_utilities.pytorch_utilities import cleanup
+from src.models/train.pytorch_utilities import cleanup
 # cleanup()
 trainer.train()

@@ -8,7 +8,7 @@ import src.toxicity_scores.n_grams as ng
 from typing import Dict, Union, List
 from torch import nn
 
-from src.training_utilities.pytorch_utilities import get_module_device
+from src.models/train.pytorch_utilities import get_module_device
 
 
 class ToxLoss(nn.Module):
