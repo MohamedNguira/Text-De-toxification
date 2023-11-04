@@ -1,4 +1,3 @@
-*.tsv
 *.zip
 env
 .idea
@@ -31,7 +30,6 @@ checkpoints/s2s/toxic_classifier_checkpoints/checkpoint-600/vocab.json
 !data/test.csv
 *.zip9brts6uftmp
 data/all_data.csv
-data/all_data_processed.csv
 data/firstprocess.csv
 data/interim/toxicity_data/cache-5a9e86a2a5fec830.arrow
 data/interim/toxicity_data/data-00000-of-00001.arrow

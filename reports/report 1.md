@@ -64,3 +64,6 @@ BART has demonstrated strong performance on a variety of text generation and tex
 
 #### 6) Results:
 
+The preliminary data analysis has provided valuable insights and a foundational understanding of the dataset's characteristics and quality. As we proceed, data preprocessing and feature engineering will play a critical role in preparing the dataset for model training, while addressing the identified data challenges. Further fine-tuning and experimentation with the models will be necessary to achieve optimal results in the task of text style transfer and toxicity reduction.
+
+For the rest of the work I will need to test the hypothesis and fine-tune the models.

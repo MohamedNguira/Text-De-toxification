@@ -13,12 +13,12 @@ def download_checkpoints():
     # download checkpoints
     url ="https://drive.google.com/file/d/1OzdC7oYtZoQlIEWYPz0Z0OBvzGNMwiTB/view?usp=sharing"
     gdown.download(url, checkpoint_dir + '\\checkpoints.zip', quiet=False, fuzzy=True, use_cookies=False)
-    with zipfile.ZipFile(checkpoint_dir + 'checkpoints.zip', 'r') as zip_ref:
+    with zipfile.ZipFile(checkpoint_dir + '\\checkpoints.zip', 'r') as zip_ref:
       zip_ref.extractall(checkpoint_dir)
-    os.remove('checkpoints.zip')
+    os.remove(checkpoint_dir + '\\checkpoints.zip')
 
 if __name__ == '__main__':
-
+ 
     download_checkpoints()
 
    
