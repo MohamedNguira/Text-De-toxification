@@ -91,3 +91,10 @@ Both of these ways will generated a .txt file in their respective directory cont
 
 ### e) Results and evaluation:
 For this part, check the 2nd report found in reports folder
+
+
+##  Important Note: Checkpoint size is 2 GB, in case the download.py script fails to download it, you can download it yourself from this drive link:
+
+https://drive.google.com/file/d/1OzdC7oYtZoQlIEWYPz0Z0OBvzGNMwiTB/view?usp=sharing
+
+## Then extract the contents of the archive directly into models directory

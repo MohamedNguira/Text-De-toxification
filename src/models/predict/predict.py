@@ -22,7 +22,7 @@ import torch
 import torch.nn.functional as F
 from datasets import load_dataset
 
-from train_custom_seq2seq import prepare_sample
+from s2sposttrain import prepare_sample
 
 SCRIPT_DIR = os.path.dirname(os.path.realpath(__file__))
 

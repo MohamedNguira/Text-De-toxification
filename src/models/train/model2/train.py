@@ -12,7 +12,7 @@ from torch.utils.data import DataLoader
 from tqdm import tqdm
 
 from src.models.train.track import create_summary_writer, report_results, _add_metric
-from src.models.train.pytorch_utilities import save_model, cleanup
+from src.models.train.pyutils import save_model, cleanup
 
 
 def compute_rouge(predictions: Iterable[str],
@@ -161,7 +161,7 @@ def val_per_epoch(summary_model: AutoModelForSeq2SeqLM,
     return losses
 
 
-def train_custom_seq2seq(train_dataloader: DataLoader,
+def s2sposttrain(train_dataloader: DataLoader,
                          val_dataloader: DataLoader,
 
                          model: AutoModelForSeq2SeqLM,

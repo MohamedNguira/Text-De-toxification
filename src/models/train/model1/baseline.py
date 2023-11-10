@@ -111,7 +111,7 @@ def baseline_predict(sentences : str,
     return [text.replace(tokenizer.mask_token, tokenizer.decode(token)) for text, token in zip(masked_sentences, top_tokens)]
 
 
-from src.training_utilities.pytorch_utilities import cleanup
+from src.training_utilities.pyutils import cleanup
 
 if __name__ == '__main__':
     
